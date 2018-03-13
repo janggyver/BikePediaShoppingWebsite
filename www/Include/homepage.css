@@ -1,0 +1,43 @@
+<STYLE type="text/css">
+
+/*********************************************************************************
+ 	
+	ProductPage.css
+	Standard stylesheet for PROG1197.2016 "BikePedia" Product Page
+	
+	Programmed by : janggyver@gmail.com / Sometime in your past
+	
+	
+	Modified by:	Eric Jang / 20 September 2016
+	
+**********************************************************************************/
+
+#HPMain {	
+
+	/* Positioning */	position: 			relative; 
+						top: 				20px;
+						left: 				100px;  
+						width: 				100%;
+						padding-left: 		5px;
+/*	background-color:	yellow; */}
+
+
+
+.BigText {
+	width:				100%;
+	position:			relative;
+	font-size:			40px;
+	float:				center;
+	weight:				bold;
+	color:				skyblue;
+
+	}
+
+#hideCheck{
+	position:			absolute;
+	top:		60px;
+	left:		5px;
+		
+	}
+
+</style>

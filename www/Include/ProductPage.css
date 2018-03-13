@@ -1,0 +1,546 @@
+<STYLE type="text/css">
+
+/*********************************************************************************
+ 	
+	ProductPage.css
+	Standard stylesheet for PROG1197.2016 "BikePedia" Product Page
+	
+	Programmed by : Joe.Marriott@nbcc.ca / Sometime in your past
+	
+	
+	Modified by:	Eric Jang / 16 September 2016
+	
+**********************************************************************************/
+
+/*********************************************************************************
+
+	General format ::
+
+	It would be helpful to have a general consistent layout for our style tags.
+	Of course, some variances are to be expected, but wherever possible please
+	stick to this format.  
+
+	If later updates add other common behaviours, please update this format template.
+
+tag.(class) {
+	/ Font /			font-family: 			
+						font-style: 			
+						font-weight:
+						font-size: 			
+						color: 
+						(other):	
+
+	/ Positioning /		text-align:
+						vertical-align:
+						(other):
+						
+	/ Table/Cell /		width:
+						height:
+						padding:
+						border:
+						border-collapse:
+						margin:
+						background-color:
+						(other):
+						
+	/ Other /			?
+}
+
+***********************************************************************************/
+
+/*********************************************************************************/
+/* You can define the behaviour of areas of the page defined by a ID attribute	 */
+/*																				 */
+/* The ID names used here should make the page areas self evident.				 */
+/* Since they carry a unique ID, these screen areas only occur at one loation.	 */
+/*																				 */
+/* If you want to "see" what part of the screen is being referred to,			 */
+/* add 	border:2px solid; border-radius:25px;									 */
+/* to any ID below.																 */
+/*********************************************************************************/
+
+#Header {	
+
+	/* Positioning */	position: 			absolute; 
+						top: 				0px; 
+						left:				0px; 
+						height: 			30px; 
+						background-color: 	#FFFFFF;
+						
+}
+
+#HeaderLeft {	
+
+	/* Positioning */
+	
+	float: 				left; 
+}
+
+#HeaderRight {	
+
+	/* Positioning */	
+	float: 				right;
+}
+
+#MenuBar {	
+
+	/* Positioning */	position: 			absolute; 
+						top: 				35px; 
+						left:				0px; 
+						height: 			18px; 
+						width: 				100%;
+						background-color: 	#2C5E8F;
+}
+
+#MenuBarLeft {	
+
+	/* Positioning */	float: 				left;
+}
+
+#MenuBarRight {	
+
+	/* Positioning */	float: 				right;
+}
+
+#Search {	
+
+	/* Positioning */	position: 			absolute; 
+						top: 				55px; 
+						left:				0px; 
+						height: 			30px;
+						width: 				100%;
+}
+
+#SearchLeft {	
+
+	/* Positioning */	float: 				left;
+						padding-left: 		5px; 
+						padding-top: 		8px; 
+						background-color: 	#EBF5FF;
+}
+
+#YouAreHereList {	
+
+	/* Positioning */	float: 				right; 
+						padding-right: 		5px; 
+						padding-top: 		8px;
+}
+
+#YouAreHereLinks {	
+
+	/* Positioning */	float: 				right; 
+						padding-top: 		10px;
+}
+
+#Main {	
+
+	/* Positioning */	position: 			absolute; 
+						top: 				120px; 
+						left: 				200px;  
+						width: 				84%;
+						padding-left: 		5px;
+					/*	background-color:	yellow; */
+}
+
+
+#Footer {	
+
+	/* Positioning */	float: 				left;
+						width: 				1000px;
+						text-align: 		center;
+						background-color: 	#EEEEEE;	
+}
+
+/*Container of Registration Form */
+
+#RegForm {
+	position:			relative;
+	float:				left;
+	/* left:				10%; */
+	/* top:				145px; */
+	width:				95%;
+	 border-radius:		25px; 
+	margin:				0 auto;
+	padding:			25px;
+	/* background-color:	red; */
+	min-height:			100px;
+	overflow:			hidden;
+}
+
+#RegForm h1{
+	font-family:		"arial black", arial, helvetica;
+	font-style:			normal;
+	font-weight:		bold;
+	font-size:			10pt;
+	text-align:			Left;
+	color:				white;
+}
+
+.RegFormLeftCol{
+	position:			relative;
+	width:				20%;
+	float:				left;
+	/* background-color:	blue; */
+	font-size:			12px;
+}
+
+.RegFormLeftColSecond{
+	position:			relative;
+	width:				30%;
+	float:				left;
+	/* background-color:	blue; */
+	font-size:			12px;
+}
+
+
+
+.RegFormRightCol{
+	position:			relative;
+	width:				20%;
+	float:				left;
+	font-size:			12px;
+
+	/*background-color:	green; */
+	
+}
+
+.RegFormRightColSecond{
+	position:			relative;
+	width:				30%;
+	float:				left;
+	font-size:			12px;
+
+/* background-color:	green; */
+	
+}
+
+.RegFormFullColFirst {
+	position:			relative;
+	width: 				20%; 
+	float: 				left;
+	font-size:			12px;
+/*	background-color: 	#CC3399; */
+}
+
+
+.RegFormFullColSecond {
+	position:			relative;
+	width: 				80%; 
+	float: 				left;
+	font-size:			12px;
+/*	background-color: 	#CC3399; */
+}
+
+
+.RegFormButtons {
+	position:			relative;
+	width: 				100%; 
+	float: 				left;
+	text-align:			right;
+
+}
+
+.RegFormButtons input {
+	height:				50px; 
+	width:				100px;
+}
+
+
+.RegFormText{
+	font-size:			12px;
+	float:				left;
+}
+
+
+.ContentText{
+	width:				100%;
+	font-size:			12px;
+	float:				left;
+	color:				darkgray;
+
+	
+}
+
+.inputok{
+ 	background-color: white;	
+}
+.inputreqd{
+	background-color: skyblue;
+}
+	
+
+
+
+.ContentText h1{
+	width:				100%;
+	position:			relative;
+	font-size:			18px;
+	float:				left;
+	weight:				bold;
+	color:				skyblue;
+
+	}
+
+.ContentText h2{
+	width:				100%;
+	font-size:			14px;
+	float:				left;
+	weight:				bold;
+	color:				orange;
+
+}
+
+
+
+#FooterTop {	
+
+	/* Positioning */	width: 				1000px;	
+}
+
+#FooterBottom {	
+
+	/* Positioning */	width: 				1000px;	
+}
+
+#LeftMenu {	
+
+	/* Positioning */	position: 			absolute; 
+						top: 				160px; 
+						left:				0px;
+						padding-left: 		5px;	
+}
+
+#LeftAds {	
+
+	/* Positioning */	position: 			absolute; 
+						top: 				400px; 
+						left:				0px;  
+						padding-left: 		5px;  
+						width: 				165px;
+}
+
+
+
+
+/********************************************************************************/
+/* You can define the behaviour of tags defined by a CLASS attribute. 			*/
+/*																				*/
+/* This can be used to override the general default behaviour,					*/
+/* or change the behaviour of tags from one spot to another.					*/
+/*																				*/
+/* Below refers to "repeating" areas of the screen that cannot be uniquely		*/
+/* 'ID'd' as per above.															*/
+/*																				*/
+/* If you want to "see" what part of the screen is being referred to,			*/
+/* add 	border:2px solid; border-radius:25px;									*/
+/* to any Class below.															*/
+/********************************************************************************/
+
+.MainProduct {	
+
+	/* Positioning */	position: 			relative;
+						clear: 				both;  
+
+}
+
+.MainProductImage {	
+
+	/* Positioning */	float:				left;		
+						width: 				150; 
+
+}
+
+.MainProductText {	
+
+	/* Positioning */	float:				left;		
+						width: 				700px; 
+
+
+}
+
+
+
+.small {
+	
+	/* Font */ 			font-family: 		Verdana, Arial, Helvetica;
+						font-size: 			7pt;
+}
+
+.price {
+	
+	/* Font */ 			font-family: 		Verdana, Arial, Helvetica;
+						font-weight: 		bold;
+						font-size: 			10pt;
+						color: 				#cc0033;
+}
+
+.whitelink {
+	
+	/* Font */ 			font-family: 		Verdana, Arial, Helvetica;
+						font-weight: 		bold;
+						font-size: 			10pt;
+						color: 				white;
+}
+
+
+
+
+
+
+
+/********************************************************************************/
+/* You can define the behaviour of individual tags.								*/	
+/* This is for general default behaviour for the entire page.					*/	
+/********************************************************************************/
+
+
+
+body {
+
+	/* Font */ 			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	normal;
+						font-size: 		10pt;
+						color: 			black;
+						margin-left: 	0; 
+						margin-right: 	0;
+						margin-top: 	0; 	
+ 
+}
+
+p {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	normal;
+						font-size: 		10pt;
+						color: 			black;	
+ 
+}
+
+li {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	normal;
+						font-size: 		10pt;
+						color: 			black;	
+ 
+}
+
+b {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	bold;
+						font-size: 		10pt;
+						color: 			black;
+}	
+ 
+a.tiny {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	bold;
+						font-size: 		8pt;
+						text-decoration:none;
+						color: 			blue;
+}
+
+a {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	bold;
+						font-size: 		10pt;
+						text-decoration:none;
+						color: 			blue;
+}
+
+a.header {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	bold;
+						font-size: 		8pt;
+						text-decoration:none;
+						color: 			gray;
+}
+
+a.headerbar {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	bold;
+						font-size: 		8pt;
+						text-decoration:none;
+						color: 			white;
+}
+
+a.footer {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	bold;
+						font-size: 		8pt;
+						text-decoration:none;
+						color: 			#555555;
+}
+
+a:hover {
+
+	/* Font */			color: 			orange;
+}
+
+
+h1 {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	bold;
+						font-size: 		18pt;
+						color: 			#333366;
+}
+ 
+h2 {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	bold;
+						font-size: 		15pt;
+						color: 			Orange;
+}
+
+h3 {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	bold;
+						font-size: 		10pt;
+						color: 			#333366;
+}
+
+h4 {
+
+	/* Font */			font-family: 	Verdana, Arial, Helvetica;
+						font-style: 	normal;
+						font-weight: 	bold;
+						font-size: 		8pt;
+						color: 			#666666;
+}
+
+
+tr.separated  {
+    /* set border style for separated rows */
+    border-bottom: 1px solid black;
+} 
+
+table {
+    /* make the border continuous (without gaps between columns) */
+    border-collapse: collapse;
+}
+</style>
+
+
+
+</STYLE>
